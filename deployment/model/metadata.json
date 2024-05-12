@@ -1,0 +1,64 @@
+{
+  "RuntimeVersion": "10.9.0.31759",
+  "ProjectID": "8b9572ca-bd87-404c-b22e-626c28d61494",
+  "ProjectName": "EventManagement",
+  "ModelVersion": "unversioned",
+  "Description": "",
+  "AdminUser": "MxAdmin",
+  "AdminRole": "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+  "JavaVersion": 11,
+  "Roles": {
+    "8dd52bfa-6d7e-453b-b506-303c0a3d9567": {
+      "Name": "Administrator",
+      "ManageableRoles": [
+        "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+        "53f5d6fa-6da9-4a71-b011-454ec052cce8",
+        "6ae86e17-3123-47b6-bc50-e35816196837",
+        "ed6b463b-8762-4010-ac64-6249fa605b13"
+      ]
+    },
+    "53f5d6fa-6da9-4a71-b011-454ec052cce8": {
+      "Name": "Visitor"
+    },
+    "6ae86e17-3123-47b6-bc50-e35816196837": {
+      "Name": "EventManager"
+    },
+    "ed6b463b-8762-4010-ac64-6249fa605b13": {
+      "Name": "Anonymous"
+    }
+  },
+  "Constants": [
+    {
+      "Name": "NanoflowCommons.Nanoflow_Commons_Version",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "4.0.0"
+    }
+  ],
+  "ScheduledEvents": [
+    {
+      "Name": "EventManagement.SendNewsletters",
+      "Description": ""
+    }
+  ],
+  "Languages": [
+    "en_US"
+  ],
+  "RequestHandlers": [
+    {
+      "Name": "/api/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/link/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/p/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    }
+  ]
+}
